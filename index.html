@@ -127,12 +127,7 @@
           </div>
           <div class="wrap-contact100-form-btn">
             <div class="contact100-form-bgbtn"></div>
-            <button
-              type="button"
-              class="contact100-form-btn"
-              data-toggle="modal"
-              data-target="#exampleModal"
-            >
+            <button type="button" class="contact100-form-btn" id="inHoaDon">
               IN HÓA ĐƠN
             </button>
           </div>
@@ -146,12 +141,81 @@
         </div>
       </div>
     </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title w-100 text-center" id="exampleModalLabel">
+              Hóa Đơn Dịch Vụ
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th colspan="2" scope="col">Loại xe</th>
+                  <th scope="col"><span id="loaiXe"></span></th>
+                  <th scope="col">Số km:<span id="soKm"></span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">CHI TIẾT</th>
+                  <th>SỬ DỤNG</th>
+                  <th>ĐƠN GIÁ (VNĐ)</th>
+                  <th>THÀNH TIỀN(VNĐ)</th>
+                </tr>
+                <tr id="kmDauTien"></tr>
+                <tr id="tu1Den19"></tr>
+                <tr id="tu19TroLen"></tr>
+                <tr id="thoiGianCho"></tr>
+                <tr>
+                  <td colspan="4" class="text-right">
+                    <h5>
+                      TỔNG TIỀN: <span class="text-danger" id="tongTien"></span>
+                    </h5>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Đóng
+            </button>
+            <button type="button" class="btn btn-primary">In hóa đơn</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--===============================================================================================-->
     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
     <!--===============================================================================================-->
     <script src="vendor/animsition/js/animsition.min.js"></script>
     <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/tooltip.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
