@@ -119,7 +119,7 @@ function thoiGianChoInHoaDon(loaiXe, thoiGianCho) {
       <td>0 ₫</td>`;
   } else {
     return `<td scope="row">Thời gian chờ <br /> <span class="small">3 phút đầu free</span></td>
-      <td>chờ ${thoiGianCho} phút tính tiền ${thoiGianCho - 3}</td>
+      <td>chờ ${thoiGianCho} phút tính tiền ${thoiGianCho - 3} phút</td>
       <td>${giaTienThoiGianCho(loaiXe.value) + " ₫"}</td>
       <td>${tinhThoiGianCho(loaiXe.value, thoiGianCho).toLocaleString("vi", {
         style: "currency",
